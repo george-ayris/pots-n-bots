@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emma's Website Builder</title>
+</head>
+
+<body>
+  <div class="d-flex flex-column" style="max-height: 100vh;">
+    <h1>Pots 'n' Bots</h1>
+    <div class="d-flex mb-2">
+      <div id="page-select" class="d-flex">
+        <label for="page-select">Current page: </label>
+        <select name="page-select" id="page-select-input"></select>
+        <button id="download-btn">
+          Download Current Page
+        </button>
+      </div>
+      <div class="flex-grow-1"></div>
+      <div id="page-add">
+        <label for="page-add">New page name: </label>
+        <input id="page-add-input" name="page-add" type="text" />
+        <button id="page-add-btn">
+          Add
+        </button>
+      </div>
+    </div>
+    <div id="no-pages" class="my-2 text-center">
+      There are no pages. Please create one above.
+    </div>
+    <div id="gjs" class="flex-grow-1"></div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
